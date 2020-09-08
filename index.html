@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="William Svoboda's personal website and portfolio">
+        <meta name="keywords" content="Software Engineer, Resume, Portfolio, Programming, Development, Contact, Programmer">
+        <meta name="author" content="William Svoboda">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>William Svoboda</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>William Svoboda</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="static/resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content-container">
+            <article id="about">
+                <div class="row">
+                    <div class="column">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="column">
+                        <p>
+                            Hey there! I'm a student at Princeton University studying Computer Science.
+                            I'm a big fan of web design, 3D games, and creating things that are both fun and rewarding.
+                        </p>
+                        <p>
+                            I'm always looking to improve my skills, whether that means building a web app with Flask or a tower defense game in Java.
+                            I might even be updating the site as you read this!
+                        </p>
+                        <p>
+                            <a href="https://github.com/disstillwill" target="_blank">Github</a>
+                            /
+                            <a href="https://www.linkedin.com/in/williamsvoboda/" target="_blank">LinkedIn</a>
+                            /
+                            <a href="https://www.instagram.com/dis_still_will/" target="_blank">Instagram</a>
+                            /
+                            <a href="https://twitter.com/dis_still_will" target="_blank">Twitter</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article id="projects">
+                <div class="row">
+                    <div class="column">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="column">
+                        <section>
+                            <h3>Personal Website</h3>
+                            <a href="https://github.com/disstillwill/disstillwill.github.io">Learn More</a>
+                            <p>
+                                My personal website and portfolio (you're on it!) built as an exercise in responsive design.
+                                The site uses modern semantic HTML and the Vanta.js library to render interactive 3D backgrounds.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Shadow Defend</h3>
+                            <a href="https://github.com/disstillwill/SWEN20003-S1-2020-Project-2">Learn More</a>
+                            <p>
+                                My capstone project for SWEN20003 Object Oriented Software Development at the University of Melbourne.
+                                Shadow defend is a tower defense game with multiple levels, wave events, and unit types.
+                                The game was built in Java using the Bagel graphics library.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Lucid</h3>
+                            <a href="https://github.com/disstillwill/Lucid">Learn More</a>
+                            <p>
+                                A 3D first-person platformer created as part of the Princeton Summer Programming Experience during Summer 2020.
+                                The game is built in Unity and features physics based platforming, an inventory system, and dynamic audio.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </article>
+            <article id="contact">
+                <div class="form-container">
+                    <h2>Contact Me</h2>
+                    <form action="https://formspree.io/xgenbpjn" method="POST">
+                        <input type="text" name="name" placeholder="name">
+                        <input type="email" name="_replyto" placeholder="email">
+                        <textarea name="message" placeholder="message"></textarea>
+                        <button type="submit">send</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>made with ❤️ by <a class="maker-link" href="https://github.com/disstillwill" target="_blank">william</a></p>
+        </footer>
+        <script src="js/three.min.js"></script>
+        <script src="js/vanta.net.min.js"></script>
+        <script>
+        VANTA.NET({
+          el: "#header",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xc33764,
+          backgroundColor: 0x1d2671
+        })
+        </script>
+    </body>
+</html>
