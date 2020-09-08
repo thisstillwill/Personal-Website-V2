@@ -118,8 +118,25 @@ header {
     color: var(--white-color);
 }
 
+nav {
+    height: 100%;
+    margin: auto;
+    max-width: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: end;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
 nav ul li a {
     color: var(--white-color);
+    padding: 0.5rem;
 }
 
 footer,
@@ -130,6 +147,12 @@ footer a {
 .content-container {
     margin: auto;
     max-width: 56rem;
+}
+
+nav,
+.content-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .row {
@@ -159,6 +182,10 @@ article section {
     width: 100%;
 }
 
+nav ul li {
+    list-style: none;
+}
+
 ul li {
     list-style: disc;
     list-style-position: inside;
@@ -172,8 +199,13 @@ ul li {
         align-items: start;
         justify-content: start;
     }
-    h2 {
-        border: none;
-        padding: 0;
+    h1 {
+        margin-top: 0;
+        font-size: 3.052em;
     }
+    h2 {font-size: 2.441em;}
+    h3 {font-size: 1.953em;}
+    h4 {font-size: 1.563em;}
+    h5 {font-size: 1.25em;}
+    small, .text_small {font-size: 0.8em;}
 }
