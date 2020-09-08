@@ -76,6 +76,10 @@ body {
 
 p {margin-bottom: 1.15rem;}
 
+i {
+    font-style: italic;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: 'Lato', sans-serif;
@@ -125,7 +129,6 @@ footer a {
 
 .content-container {
     margin: auto;
-    margin-top: 4rem;
     max-width: 56rem;
 }
 
@@ -150,6 +153,15 @@ footer {
 h2 {
     border-bottom: 0.5rem solid var(--blue-color);
     padding: 1rem;
+}
+
+article section {
+    width: 100%;
+}
+
+ul li {
+    list-style: disc;
+    list-style-position: inside;
 }
 
 @media (max-width: 64rem) {
