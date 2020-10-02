@@ -94,6 +94,19 @@ article {
     margin-left: auto;
 }
 
+.svg-list {
+    margin: 2.75rem 0 1.05rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+ul li svg {
+    height: 128px;
+}
+
 .card {
     border: 2px solid #005588;
     margin: 2.75rem 0 1.05rem;
