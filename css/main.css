@@ -1,27 +1,28 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+*:focus {
+    outline: none;
 }
 
 :root {
+    font-size: 100%;
     --blue-color: #005588;
     --black-color: #000505;
     --white-color: #FDFFFF;
 }
 
-html {font-size: 100%;} /*16px*/
-
 body {
-  background-color: var(--white-color);
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
-  line-height: 1.65;
-  color: var(--black-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-*:focus {
-    outline: none;
+      background-color: var(--white-color);
+      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.65;
+      color: var(--black-color);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 }
 
 p {margin-bottom: 1.15rem;}
@@ -127,10 +128,12 @@ img {
 }
 
 .contact {
-    margin: 2.75rem 0 1.05rem;
+    display: inline-block;
+    margin: 0.3437rem 0 0.1312rem;
     color: var(--white-color);
     background-color: var(--blue-color);
     padding: 1rem;
+    border: 2px solid var(--blue-color);
 }
 
 .contact:focus,
@@ -138,7 +141,6 @@ img {
     color: var(--blue-color);
     background-color: var(--white-color);
     text-decoration: none;
-    border: 2px solid var(--blue-color);
 }
 
 .card {
