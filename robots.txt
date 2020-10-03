@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /static/resume.pdf
+Sitemap: https://will.cx/sitemap.xml
