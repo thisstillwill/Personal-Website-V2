@@ -3,25 +3,30 @@
 }
 
 :root {
-    --red-color: #C33764;
     --blue-color: #005588;
-    --black-color: #191308;
-    --white-color: #F4F4F4;
+    --black-color: #000505;
+    --white-color: #FDFFFF;
 }
 
 html {font-size: 100%;} /*16px*/
 
 body {
-  background-color: white;
+  background-color: var(--white-color);
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   line-height: 1.65;
-  color: #333;
+  color: var(--black-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+    outline: none;
 }
 
 p {margin-bottom: 1.15rem;}
 
-h1, h2, h3, h4, h5, nav {
+h1, h2, h3, h4, h5, nav, .contact {
   margin: 2.75rem 0 1.05rem;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -39,13 +44,13 @@ h3 {font-size: 1.424em;}
 
 h4 {font-size: 1.266em;}
 
-h5, nav {font-size: 1.125em;}
+h5, .contact {font-size: 1.125em;}
 
 small, .text_small {font-size: 0.889em;}
 
 header {
     height: 100vh;
-    background-color: #005588;
+    background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,12 +58,12 @@ header {
 }
 
 header h1, h2, nav {
-    color: white;
+    color: var(--white-color);
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
     margin: 0.3437rem 0 0.1312rem;
-    text-shadow: 3px 4px 4px rgba(0,0,0,0.1);
+    text-shadow: 3px 4px 4px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -73,12 +78,12 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: var(--white-color);
 }
 
 a {
     text-decoration: none;
-    color: #005588;
+    color: var(--blue-color);
 }
 
 a:focus,
@@ -94,6 +99,11 @@ article {
     margin-left: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .svg-list {
     margin: 2.75rem 0 1.05rem;
     width: 100%;
@@ -103,12 +113,36 @@ article {
     flex-direction: row;
 }
 
-ul li svg {
+.svg-list li {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.svg-list li h5 {
+      margin: 1.375rem 0 0.525rem;
+}
+
+.svg-list li svg {
     height: 128px;
 }
 
+.contact {
+    margin: 2.75rem 0 1.05rem;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    padding: 1rem;
+}
+
+.contact:focus,
+.contact:hover {
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    text-decoration: none;
+    border: 2px solid var(--blue-color);
+}
+
 .card {
-    border: 2px solid #005588;
+    border: 2px solid var(--blue-color);
     margin: 2.75rem 0 1.05rem;
     padding: 1rem;
     transition: box-shadow .3s;
@@ -133,7 +167,7 @@ footer p {
 
     h4 {font-size: 1.563em;}
 
-    h5, nav {font-size: 1.25em;}
+    h5, nav, .contact {font-size: 1.25em;}
 
     small, .text_small {font-size: 0.8em;}
 }
@@ -149,7 +183,7 @@ footer p {
 
     h4 {font-size: 1.999em;}
 
-    h5 , nav {font-size: 1.414em;}
+    h5, nav, .contact {font-size: 1.414em;}
 
     small, .text_small {font-size: 0.707em;}
 }
