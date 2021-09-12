@@ -1,2 +1,2 @@
 # disstillwill.github.io
-Current version of my personal website. Built with pure HTML and CSS along with the [Vanta JS](https://github.com/tengbao/vanta) graphics library.
+Version 2 of my personal website, built with pure HTML, CSS and the [Vanta JS](https://github.com/tengbao/vanta) graphics library. Repo is archived.
